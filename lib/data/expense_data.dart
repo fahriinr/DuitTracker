@@ -31,8 +31,8 @@ class ExpenseData extends ChangeNotifier {
 
   // delete expense
   void deleteExpense(ExpenseItem expense) {
-    db.saveData(overallExpenseList);
     overallExpenseList.remove(expense);
+    db.saveData(overallExpenseList);
 
     notifyListeners();
   }
