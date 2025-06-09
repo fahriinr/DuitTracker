@@ -1,5 +1,6 @@
 import 'package:belajar_bloc/components/expense_summary.dart';
 import 'package:belajar_bloc/components/expense_tile.dart';
+import 'package:belajar_bloc/components/expense_total.dart';
 import 'package:belajar_bloc/data/expense_data.dart';
 import 'package:belajar_bloc/models/expense_item.dart';
 import 'package:flutter/material.dart';
@@ -121,6 +122,9 @@ class _HomePageState extends State<HomePage> {
             ),
             body: ListView(
               children: [
+                SizedBox(height: 20),
+                // All Week Expense Total
+                ExpenseTotal(),
                 // weekly summary
                 ExpenseSummary(startOfWeek: value.startOfWeekDate()),
 

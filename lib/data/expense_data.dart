@@ -127,4 +127,15 @@ class ExpenseData extends ChangeNotifier {
     }
     return dailyExpenseSummary;
   }
+
+  String calculateTotalExpenseSummary() {
+    double total = 0;
+
+    for (var expense in overallExpenseList) {
+      double amount = double.parse(expense.amount);
+
+      total += amount;
+    }
+    return total.toStringAsFixed(0);
+  }
 }
