@@ -38,8 +38,8 @@
 - **Framework**: Flutter
 - **Bahasa**: Dart
 - **Platform**: Android & iOS
-- **Database**: SQLite (Local Storage)
-- **State Management**: Provider/Bloc
+- **Database**: Hive (Local Storage)
+- **State Management**: Provide
 
 ---
 
